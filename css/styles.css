@@ -21,6 +21,9 @@ body{
 	width:50px;
 	display: inline-block;
 }
+.logo:hover{
+	cursor: pointer;
+}
 
 .navBar{
 	display: inline-block;
