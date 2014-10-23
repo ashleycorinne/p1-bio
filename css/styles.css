@@ -50,7 +50,7 @@ footer{
 .navBar a:hover{
 	color: #A86973;
 	cursor: pointer;
-	transition: 100;
+	transition: 1000;
 }
 
 .contentBox{
