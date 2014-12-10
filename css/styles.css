@@ -1,64 +1,61 @@
 
-body{
-	padding-top: 20px;
-	background: url(../img/stardust.png);
+
+html{
+	background: url("../img/subtle_dots.png")
 }
 footer{
     text-align: center ;
-    font-size: 12px ;
+    font-size: 1.0em;
     height: 20px ;
     color: #a2a2a2;
     padding-bottom: 30px;
 }
+hr{
+	border-color: #b2b2b2;
+}
 .container{
-	width: 70%;
+	width:100%;
+	color:#b2b2b2;
 }
-
-.nameHeader{
-	color: white;
-	font-size: 3.2em;
-	font-family: 'Josefin Sans', sans-serif;
-	padding: 10px 0px;
-	display: inline-block;
-	width: 55%;
+.brandLogo{
+	width: 5%;
 	height: 100%;
-
+	padding: 10px;
+	position: relative;
+	z-index: 1;
 }
 
-.paragraph{
-	padding: 5px 10px;
-}
-
-.logo{
-	width: 10%;
-}
-.logo:hover{
+.brandLogo:hover{
 	cursor: pointer;
-	-webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
+	-moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
 }
 
+.Logo{
+	text-align: center;
+	display: block;
+}
 .navBar{
-	display: inline-block;
-	width: 44%;
+	text-align: center;
 }
 .navBar li{
 	list-style: none;
 	display: inline;
-	font-size:1.2em;
+	font-size:2.0em;
 	margin-right: 5px;
 	font-family: 'Josefin Sans', sans-serif;
 }
 .navBar a {              
 	text-decoration: none;
-	color: #b2b2b2;
+	color: #333;
 	padding-right: 10px;
 }
 .navBar a:hover{
-	color: white;
+	color: #b2b2b2;
 	cursor: pointer;
  	-webkit-transition: all .5s ease;
   	-moz-transition: all .5s ease;
@@ -67,18 +64,73 @@ footer{
   	transition: all .5s ease;
 }
 .selectedPage a{
+	color: #A86973;
+}
+
+.pageContent{
+	background: #333;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.pageSections{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.resumeHeaders{
+	font-size: 1.8em;
+	padding: 5px 5px 0px 5px;
 	color: white;
-
 }
 
-
-.contentBox{
-	width: 100%;
-	height: 100%;
-	background-color: white;
-	box-shadow: #444 3px 3px 10px;
-
+.nameInfo{
+	font-size: 3.2em;
+	display: block;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: bold;
+	padding-top: 70px;
+	color:white;
 }
+.contactInfo{
+	display: block;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #b2b2b2;
+	font-size: 1.4em;
+	padding-top: 15px;
+}
+
+.emailLink{
+	text-decoration: none;
+	padding-right: 10px;
+	color:#b2b2b2;
+}
+.emailLink:hover{
+	cursor: pointer;
+	color: #A86973;
+}
+.phoneNumber{
+	padding-left: 10px;
+}
+
+section{
+	display: block;
+	padding-top: 20px;
+}
+hr{
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.resume{
+	width: 80%;
+	display: block;
+	margin: auto;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.2em;
+}
+
 
 .myInfo{
 	display: inline-block;	
@@ -103,19 +155,21 @@ footer{
 .myPics{
 	padding:20px;
 }
+
 .pic{
-	width: 33%;
+	width: 30%;
+	margin: 1%;
 }
+
 .tab { text-indent:40px; }
 .paragraph, .favLists ul{
-	font:14px Arial, Helvetica, sans-serif
+	font:1em Arial, Helvetica, sans-serif
 }
 .socialMedia{
-	font-size: 25px;
-	display: inline-block;
-	padding-left:15px;
+	text-align: center;
 }
 .socialMedia i{
+	font-size: 2.0em;
 	color:#b2b2b2;
 	padding-right: 5px;
 }
@@ -129,4 +183,34 @@ footer{
   	-o-transition: all .5s ease;
   	transition: all .5s ease;
 }
-
+.skillList{
+	list-style-type: none; 
+	font-size:1.1em;
+}
+.workHeader{
+	padding-top: 20px;
+	font-size: 1.3em;
+}
+.workList{
+	font-size: 1.0em;
+}
+.bold,.workTitle{
+	font-weight: bold;
+}
+.workPlace{
+	margin-left: 20px;
+}
+.workTime{
+	float:right;
+}
+.skillList li, .workList li{
+	padding: 5px;
+}
+.languagesDiv{
+	display:inline-block; 
+	vertical-align:top;
+}
+.programsDiv{
+	display:inline-block; 
+	vertical-align:top;
+}
