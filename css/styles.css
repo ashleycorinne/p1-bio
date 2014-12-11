@@ -223,4 +223,12 @@ hr{
 	.pic{
 		width: 100%;
 	}
+
+	.kitty{
+		display: none;
+	}
+
+	.me{
+		display: none;
+	}
 }
