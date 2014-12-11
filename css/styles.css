@@ -216,6 +216,9 @@ hr{
 	display:inline-block; 
 	vertical-align:top;
 }
+.mcdesigns{
+	width: 50%;
+}
 
 
 @media only screen and (max-device-width: 480px) {
@@ -230,5 +233,11 @@ hr{
 
 	.me{
 		display: none;
+	}
+	.mcdesigns{
+		width:100%;
+	}
+	.brandLogo{
+		width: 10%;
 	}
 }
